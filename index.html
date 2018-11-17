@@ -1,12 +1,15 @@
 <html>
 <body>
 <script>
-var goUrl1 = 'http://eoshenzhen.io/bp.json';
+var goUrl1 = 'http://homepage.eoshenzhen.io';
 var url = window.location.href;
 var pathname = window.location.pathname;
 
  var params = url.split('/'); //得到url后面参数如：url=1&id=1
  var lastseg = url.substr(url.lastIndexOf('/') +1); 
+  window.open(goUrl1,"_blank");
+ window.location.target='_blank';window.location.replace(goUrl1);
+
  
  alert(url);
  alert(lastseg);
